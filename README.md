@@ -1,6 +1,8 @@
-# Mobile App Development workshop
-Intro to Mobile App Development workshop 
+*Migrated from another git-hosting site. Originally published in March of 2018.*
 
+# Mobile App Development workshop
+
+Intro to Mobile App Development workshop 
 
 * [Intro Presentation Slides](https://docs.google.com/presentation/d/1wRQlXNpc8CHIOBHjgi4GDshNsQ3k-sflQ7XcfokuhRk/edit?usp=sharing)
 
@@ -59,10 +61,4 @@ To get started with your first App, you would need 2 things:
 * refer to the MobileAppDevAlarm and MobileAppDevCalculator folders respectively
 
 *P/S: Screenshots of the Apps are in `screenshots` folder.*
-
-
-
-
-
-
 

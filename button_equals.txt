@@ -1,0 +1,125 @@
+public void button_equals(View view) {
+        if (valid == true) {
+            temp = workspace.getText().toString();
+            if (current_operation == "null"){
+                //check for the conditions listed for special feature
+                if (temp.equals("160297")) {
+                    workspace.setText("Happy Birthday!");
+                    crush520 = true;
+                    current_workspace = "";
+                    current_operation = "null";
+                    equals_last = false;
+                    past_operation = "";
+                    temp = "";
+                    number1 = 0;
+                    number2 = 0;
+                    equation.setText("");
+                }
+                else if (temp.equals("1402")) {
+                    workspace.setText("Happy Valentines!");
+                    crush520 = true;
+                    current_workspace = "";
+                    current_operation = "null";
+                    equals_last = false;
+                    past_operation = "";
+                    temp = "";
+                    number1 = 0;
+                    number2 = 0;
+                    equation.setText("");
+                }
+
+                else {
+                    //if there are no operators selected
+                    //number is keyed and equals is pressed
+                    workspace.setText(temp);
+                }
+
+
+            }
+            if (past_operation == "add"){
+                //obtain current number and save it to number2
+                number2 = Float.parseFloat(temp);
+                number1 += number2;
+                temp = String.valueOf(number1);
+                //Displaying the value back to workspace
+                workspace.setText(temp);
+                //Resetting the variables for next usage.
+                current_equation = temp;
+                current_workspace = "";
+                current_operation = "null";
+                equals_last = true;
+                past_operation = "";
+                temp = "";
+                number1 = 0;
+                number2 = 0;
+                equation.setText("");
+            }
+
+            else if (past_operation == "minus"){
+                number2 = Float.parseFloat(temp);
+                number1 -= number2;
+                temp = String.valueOf(number1);
+                workspace.setText(temp);
+                current_equation = temp;
+                current_operation = "null";
+                current_workspace = "";
+                equals_last = true;
+                past_operation = "";
+                temp = "";
+                number1 = 0;
+                number2 = 0;
+                equation.setText("");
+            }
+
+            else if (past_operation == "multiply"){
+                number2 = Float.parseFloat(temp);
+                number1 *= number2;
+                temp = String.valueOf(number1);
+                workspace.setText(temp);
+                current_equation = temp;
+                current_operation = "null";
+                current_workspace = "";
+                equals_last = true;
+                past_operation = "";
+                temp = "";
+                number1 = 0;
+                number2 = 0;
+                equation.setText("");
+            }
+
+            else if (past_operation == "divide"){
+                number2 = Float.parseFloat(temp);
+                if (number2 == 0) {
+                    current_workspace = "";
+                    current_operation = "null";
+                    equals_last = true;
+                    temp = "";
+                    number1 = 0;
+                    number2 = 0;
+                    workspace.setText("Math Error");
+                    equation.setText("");
+                }
+
+                else {
+                    number1 /= number2;
+                    temp = String.valueOf(number1);
+                    workspace.setText(temp);
+                    current_equation = temp;
+                    current_operation = "null";
+                    current_workspace = "";
+                    equals_last = true;
+                    past_operation = "";
+                    temp = "";
+                    number1 = 0;
+                    number2 = 0;
+                    equation.setText("");
+                }
+
+            }
+            past_operation = "";
+        }
+
+
+
+        valid = false;
+    }

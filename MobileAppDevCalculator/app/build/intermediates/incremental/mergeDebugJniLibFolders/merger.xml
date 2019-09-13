@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/steventan/Documents/GitHub/MobileAppDev-workshop/MobileAppDevCalculator/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/steventan/Documents/GitHub/MobileAppDev-workshop/MobileAppDevCalculator/app/src/debug/jniLibs"/></dataSet></merger>

@@ -1,0 +1,4 @@
+#Fri Sep 13 17:49:24 MYT 2019
+base.0=/Users/steventan/Documents/GitHub/MobileAppDev-workshop/MobileAppDevAlarm/MobileAppDevAlarm/build/intermediates/transforms/dexMerger/debug/3
+path.0=classes.dex
+renamed.0=classes.dex
